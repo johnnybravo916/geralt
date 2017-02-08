@@ -66,7 +66,15 @@
       <nav>
         <ul>
           <li><a href="#" title="#">Link</a></li>
-          <li><a href="#" title="#">Link</a></li>
+          <li>
+            <a href="#" title="#">Link</a>
+            <ul>
+              <li><a href="#" title="#">Link</a></li>
+              <li><a href="#" title="#">Link</a></li>
+              <li><a href="#" title="#">Link</a></li>
+              <li><a href="#" title="#">Link</a></li>
+            </ul>
+          </li>
           <li><a href="#" title="#">Link</a></li>
           <li><a href="#" title="#">Link</a></li>
           <li><a href="#" title="#">Link</a></li>
@@ -83,7 +91,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        slider
+        <img src="./placeholder/main-slider.jpg" title="Slider" class=""/>
       </div>
     </div>
   </div>
@@ -94,14 +102,16 @@
     <div class="row">
       <div class="col-md-12">
         <div class="module-homeNews--header">
-          <span class="icon-block icon-block--news">icon</span>
+          <span class="icon-block icon-block--news"><i class="fa fa-newspaper-o"></i></span>
           <h2>News &amp; Announcements</h2>
         </div>
-        <div class="module-homeNews--content">
-          <div class="module-homeNews--date">6 Oct 2016</div>
-          <h3 class="module-homeNews--title">Title goes here</h3>
-          <div class="module-homeNews--content">
-            content
+        <div class="module-homeNews--wrap">
+          <div class="module-homeNews--block">
+            <div class="module-homeNews--date">6 Oct 2016</div>
+            <h3 class="module-homeNews--title">Title goes here</h3>
+            <div class="module-homeNews--content">
+              content
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +125,7 @@
       <div class="col-md-3">
         <div class="block-homeLinks">
           <div class="block-homeLinks--img">
-            image
+            <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
           </div>
           <div class="block-homeLinks--links">
             <div class="block-homeLinks--header">
@@ -123,10 +133,71 @@
             </div>
             <div class="block-homeLinks--content">
               <ul>
-                <li><a href="#" title="#">title</a></li>
-                <li><a href="#" title="#">title</a></li>
-                <li><a href="#" title="#">title</a></li>
+                <li><a href="#" title="Overview of Functions">Overview of Functions</a></li>
+                <li><a href="#" title="Mutual Legal Assistance">Mutual Legal Assistance</a></li>
+                <li><a href="#" title="Extradition">Extradition</a></li>
+                <li><a href="#" title="Our Significant Milestones">Our Significant Milestones</a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="block-homeLinks">
+          <div class="block-homeLinks--img">
+            <img src="./placeholder/image-publicprosecutor.jpg" title="#"/>
+          </div>
+          <div class="block-homeLinks--links">
+            <div class="block-homeLinks--header">
+              <h2>Public Prosecutor</h2>
+            </div>
+            <div class="block-homeLinks--content">
+              <ul>
+                <li><a href="#" title="Overview of Functions">Overview of Functions</a></li>
+                <li><a href="#" title="Protector of Charities">Protector of Charities</a></li>
+                <li><a href="#" title="Legal Profession and Professionals">Legal Profession and Professionals</a></li>
+                <li><a href="#" title="Our Significant Milestones">Our Significant Milestones</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="block-homeLinks">
+          <div class="block-homeLinks--img">
+            <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
+          </div>
+          <div class="block-homeLinks--links">
+            <div class="block-homeLinks--header">
+              <h2>International Law Advisor</h2>
+            </div>
+            <div class="block-homeLinks--content">
+              <ul>
+                <li><a href="#" title="Criminal Prosecutions">Criminal Prosecutions</a></li>
+                <li><a href="#" title="Financial and Technological Crime Prosecutions">Financial and Technological Crime Prosecutions</a></li>
+                <li><a href="#" title="Our Significant Milestones">Our Significant Milestones</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="block-homeLinks">
+          <div class="block-homeLinks--img">
+            <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
+          </div>
+          <div class="block-homeLinks--links">
+            <div class="block-homeLinks--header">
+              <h2>Drafter of Laws</h2>
+            </div>
+            <div class="block-homeLinks--content">
+              <ul>
+                <li><a href="#" title="Overview">Overview</a></li>
+                <li><a href="#" title="Legislation and Revisions">Legislation and Revisions</a></li>
+                <li><a href="#" title="Singapore Statutes Online">Singapore Statutes Online</a></li>
+                <li><a href="#" title="Our Significant Milestones">Our Significant Milestones</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -140,7 +211,7 @@
       <div class="col-md-6">
         <div class="block-home2ColLinks">
           <div class="block-home2ColLinks--header block-homeFaq">
-            <span class="icon-block icon-block--faq">Icon</span>
+            <span class="icon-block icon-block--faq"><i class="fa fa-question-circle"></i></span>
             <h2>Faq</h2>
           </div>
           <div class="block-home2ColLinks--content block-homeLegalProcesses">
@@ -153,10 +224,33 @@
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <div class="block-home2ColLinks">
+          <div class="block-home2ColLinks--header block-homeFaq">
+            <span class="icon-block icon-block--faq"><i class="fa fa-suitcase"></i></span>
+            <h2>Legal Processes</h2>
+          </div>
+          <div class="block-home2ColLinks--content block-homeLegalProcesses">
+            <ul>
+              <li><a href="#" title="#">Title</a></li>
+              <li><a href="#" title="#">Title</a></li>
+              <li><a href="#" title="#">Title</a></li>
+              <li><a href="#" title="#">Title</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <small class="block-updateDate">
-      Last updated/reviewed on <span>9 Jan 2017</span>
-    </small>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <small class="block-updateDate">
+        Last updated/reviewed on <span>9 Jan 2017</span>
+      </small>
+    </div>
   </div>
 </div>
 
