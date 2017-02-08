@@ -40,6 +40,12 @@ a:hover, a:focus{text-decoration:none}
 .menu-desktop li{display:inline;list-style-type:none}
 .menu-desktop a{display:inline-block;color:#fff;font-family:'montserratlight', sans-serif;padding:10px 15px}
 /*******FOOTER*******/
+footer li{display:inline}
+footer li a{display:inline-block;font-size:13px;color:#972839}
+footer li:after{content:"|";color:#ccc}
+.footer-top{background:#f9f9f9}
+
+
 /*******RESPONSIVE*******/
 @media only screen and (max-width : 1200px) {
 }
