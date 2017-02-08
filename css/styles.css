@@ -1,14 +1,44 @@
 /*******FONTS*******/
-@font-face{font-family:museo_sans500;src:url(museosans_500-webfont.woff2) format('woff2'),url(museosans_500-webfont.woff) format('woff');font-weight:400;font-style:normal}
-@font-face{font-family:montserratlight;src:url(montserrat-light-webfont.woff2) format('woff2'),url(montserrat-light-webfont.woff) format('woff');font-weight:400;font-style:normal}
+@font-face{font-family:museo_sans500;src:url(../fonts/museosans_500-webfont.woff2) format('woff2'),url(../fonts/museosans_500-webfont.woff) format('woff');font-weight:400;font-style:normal}
+@font-face{font-family:montserratlight;src:url(../fonts/montserrat-light-webfont.woff2) format('woff2'),url(../fonts/montserrat-light-webfont.woff) format('woff');font-weight:400;font-style:normal}
 
 /*******GLOBAL*******/
+html{background:#fff}
+body{font:400 16px/1.5 'Open Sans', sans-serif;font-weight:300;color:#000}
 
+input{border:none}
+img, video{max-width:100%}
+select{cursor:pointer}
+a:hover, a:focus{text-decoration:none}
 
 /*******USEFUL STUFF*******/
-
+.font-montserrat{font-family:'Montserrat', sans-serif}
 
 /*******HEADER*******/
+.branding-link{display:block;margin:20px}
+.branding-link img{max-width:250px}
+
+.img-singapore{margin:10px 0 0;float:right}
+.header-fontresizer{font-size:12px;font-weight:bold;float:right;margin-right:5px}
+.header-fontresizer span{font-family:'Montserrat', sans-serif}
+.fontresize-title{margin-right:10px;color:#333333;}
+.fontresize-minus{font-size:10px;color:#aaa;cursor:pointer}
+.fontresize-reset{font-size:12px;margin:0 5px;cursor:pointer}
+.fontresize-plus{font-size:16px;color:#aaa;cursor:pointer}
+
+.header-submenuWrap{float:right}
+.header-submenu{float:right;margin-bottom:10px}
+.header-submenu ul{padding:0;margin:0}
+.header-submenu li{list-style-type:none;display:inline}
+.header-submenu a{display:inline-block;font-size:14px;color:#902b40;margin-left:12px;font-weight;bold}
+
+.header-searchWrap input,.header-searchWrap select{background:#eee;border:none;border-radius:5px;height:36px;padding:0 10px;font-size:15px}
+.header-searchWrap input[type="submit"]{background:#545454;color:#fff;width:90px}
+
+.menu-desktop{background:#972839;margin:10px 0}
+.menu-desktop ul{margin:0;padding:0}
+.menu-desktop li{display:inline;list-style-type:none}
+.menu-desktop a{display:inline-block;color:#fff;font-family:'montserratlight', sans-serif;padding:10px 15px}
 /*******FOOTER*******/
 /*******RESPONSIVE*******/
 @media only screen and (max-width : 1200px) {
