@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>AGC | Attorney-General's Chambers</title>
+  <meta name="description" content="Attorney-General’s Chambers">
+  <meta name="keywords" content="">
+  <link rel="icon" href="favicon.png" type="icon/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Montserrat">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/plugins.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/jquery.js"></script>
+</head>
+<body>
+<header class="header-desktop">
+  <div class="container">
+    <div class="header-masthead">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="/" title="AGC | Attorney-General's Chambers" class="branding-link">
+            <img src="./images/branding.png" alt="AGC | Attorney-General's Chambers"/>
+          </a>
+        </div>
+        <div class="col-sm-8">
+          <div class="header-right pull-right">
+            <div class="clearfix">
+              <img src="./images/singapore-government.png" title="Singapore Government" class="img-singapore"/>
+            </div>
+            <div class="clearfix">
+              <div class="header-submenuWrap">
+                <div class="header-submenu font-montserrat">
+                  <ul>
+                    <li><a href="#" title="#">Contact Info</a></li>
+                    <li><a href="#" title="#">Feedback</a></li>
+                    <li><a href="#" title="#">Sitemap</a></li>
+                  </ul>
+                </div>
+                <div class="header-fontresizer font-montserrat">
+                  <span class="fontresize-title">Font Resize</span>
+                  <span class="fontresize-minus">A</span>
+                  <span class="fontresize-reset">A</span>
+                  <span class="fontresize-plus">A</span>
+                </div>
+              </div>
+              <div class="header-searchWrap">
+                <input type="text" placeholder="Search keyword here">
+                <select>
+                  <option>within AGC</option>
+                </select>
+                <input type="submit" value="Search"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-desktop">
+      <nav>
+        <ul>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+          <li><a href="#" title="#">Link</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<!--breadcrumbs-->
+<div class="container">
+  <div class="breadcrumbs">
+    <div class="row">
+      <div class="col-sm-11">
+        <nav>
+          <li><a href="#" title="Home">Home</a></li>
+        </nav>
+      </div>
+      <div class="col-sm-1">
+        <a href="#" title="Print" class="print"><i class="fa fa-print"></i> Print</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--main content-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <!--sidebar-->
+      <aside class="sidebar_main">
+        <h2>Newsroom</h2>
+        <ul>
+          <li><a class="active" href="#" title="Media Releases">Media Releases</a></li>
+          <li><a href="#" title="Media Releases">Speeches</a></li>
+          <li><a href="#" title="Media Releases">News</a></li>
+        </ul>
+      </aside>
+      <!--search-->
+      <aside class="sidebar_search">
+        <h3>News Search</h3>
+        <label for="keyword">Keyword</label>
+        <input type="text" name="keyword" id="keyword">
+        <label for="category">Category</label>
+        <div class="form_select">
+          <select id="category" name="category">
+            <option value="0">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <span class="form-label">Date:</span>
+        <label for="from">From</label>
+        <div class="form_select form_date">
+          <select name="from" id="from-month">
+            <option value="0">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="form_select form_date">
+          <select id="from-year" name="from">
+            <option value="0">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <label for="to">To</label>
+        <div class="form_select form_date">
+          <select id="to-month" name="to">
+            <option value="0">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="form_select form_date">
+          <select id="to-year" name="to">
+            <option value="0">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <input type="submit" value="Search">
+      </aside>
+    </div>
+    <div class="col-sm-9 pl20">
+      <h1>Media Releases</h1>
+      <section class="news-listing">
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <!--news item -->
+        <article class="news-item">
+          <div class="news-date">06 Jul 2015</div>
+          <h3>PP v Amos Yee: Prosecution's Skeletal Submissions</h3>
+          <p>In light of the media interest in this case, the Prosecution is making its Skeletal Submissions tendered on 6 July 2015 available here.</p>
+          <a href="#" class="btn_read-more" title="Read More">Read More</a>
+        </article>
+
+        <div class="pager">
+          <div class="page-count text-center">
+            1 of 13
+          </div>
+          <nav class="pager-nav">
+            <a href="#" class="disabled pager_first"><i class="fa fa-angle-left" aria-hidden="true"></i> First</a>
+            <a href="#" class="disabled pager_prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
+            <ul>
+              <li><a class="active" href="#" title="1">1</a></li>
+              <li><a href="#" title="2">2</a></li>
+              <li><a href="#" title="3">3</a></li>
+              <li><a href="#" title="4">4</a></li>
+              <li><a href="#" title="5">5</a></li>
+              <li><a href="#" title="6">6</a></li>
+              <li><a href="#" title="7">7</a></li>
+              <li><a href="#" title="8">8</a></li>
+              <li><a href="#" title="9">9</a></li>
+              <li><a href="#" title="10">10</a></li>
+            </ul>
+            <a href="#" class="pager_last">Last <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="pager_next">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+
+        <div class="update-stamp text-right">
+          Last updated / reviewed on 9 Jan 2017
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+            <ul>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <nav>
+            <ul>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+              <li><a href="#" title="#">title</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-6">
+          <small>Copyright &copy; <span class="js-year">Year</span> Government of Singapore.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/plugins.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
