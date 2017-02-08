@@ -4,7 +4,7 @@
 
 /*******GLOBAL*******/
 html{background:#fff}
-body{font:400 16px/1.5 'Open Sans', sans-serif;font-weight:300;color:#000}
+body{font:400 16px/1.5 'Open Sans', sans-serif;font-weight:400;color:#000}
 
 input{border:none}
 img, video{max-width:100%}
@@ -12,8 +12,12 @@ select{cursor:pointer}
 a:hover, a:focus{text-decoration:none}
 
 /*******USEFUL STUFF*******/
+.font-montserratLight{font-family:'montserratlight', sans-serif}
 .font-montserrat{font-family:'Montserrat', sans-serif}
+.font-opensans{font-family:'Open Sans', sans-serif}
+.font-museo{font-family:'museo_sans500', sans-serif}
 
+.block-updateDate{font-style:italic;font-size:13px;color:#333333;text-align:right;display:block;font-weight:400;margin:15px 0}
 /*******HEADER*******/
 .branding-link{display:block;margin:20px}
 .branding-link img{max-width:250px}
@@ -39,12 +43,25 @@ a:hover, a:focus{text-decoration:none}
 .menu-desktop ul{margin:0;padding:0}
 .menu-desktop li{display:inline;list-style-type:none}
 .menu-desktop a{display:inline-block;color:#fff;font-family:'montserratlight', sans-serif;padding:10px 15px}
+
+/*******SUBPAGE*******/
+
+
+/*******LISTING PAGE*******/
+
+
+/*******SINGLE PAGE*******/
+
+
 /*******FOOTER*******/
+footer ul{margin:0;padding:0}
 footer li{display:inline}
 footer li a{display:inline-block;font-size:13px;color:#972839}
-footer li:after{content:"|";color:#ccc}
-.footer-top{background:#f9f9f9}
-
+footer li:after{content:"|";color:#ccc;padding:0 3px 0 5px}
+footer li:last-child:after{display:none}
+.footer-top{background:#f9f9f9;padding:20px 0}
+.footer-bottom{padding:20px 0}
+.footer-bottom small{font-size:12px;text-align:right;display:block}
 
 /*******RESPONSIVE*******/
 @media only screen and (max-width : 1200px) {
