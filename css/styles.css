@@ -63,6 +63,7 @@ a:hover, a:focus{text-decoration:none}
 .icon-block--news{color:#545454;font-size:24px;background:#dddddd}
 .module-homeNews--header h2{display:inline;padding:0 20px;font-weight:300}
 .module-homeNews--block{padding:20px;border-right:1px solid #ddd}
+.slider-carouselMain--contentSlide:last-child .module-homeNews--block{border:none}
 .module-homeNews--date{font-style:italic;margin-bottom:5px}
 .module-homeNews--title{margin:0 0 25px;color:#972839;font-size:18px}
 
@@ -92,6 +93,20 @@ a:hover, a:focus{text-decoration:none}
 .breadcrumbs nav li:last-child a:after {content:""; display:none}
 .print {color:#bd959b; font:12px montserratlight,sans-serif; text-transform:uppercase}
 
+/*******SLIDERS*******/
+.slider-main--content{margin:0 auto 25px}
+.slider-main--contentSlide{position:relative}
+.slider-main--contentCaption{padding:25px 15px;background:rgba(0,0,0,0.8);color:#fff;font-size:15px;position:absolute;right:0;top:50px;width:275px;top:50%;transform: translateY(-50%);}
+.slider-main--contentCaption h2{font-size:15px;color:#a0bec1;margin:0 0 5px 0}
+.js-slider-main--dots{text-align:center;margin-top:-50px;position:relative}
+.js-slider-main--dots li{display:inline;list-style-type:none;margin:0 12px}
+.js-slider-main--dots li button{display:inline-block;height:12px;width:12px;border-radius:50%;background:#eee;font-size:0;line-height:0;border:0}
+.js-slider-main--dots li.slick-active button{background:#972839}
+
+.js-slider-carouselMain--dots{text-align:center;margin-top:0px;position:relative}
+.js-slider-carouselMain--dots li{display:inline;list-style-type:none;margin:0 12px}
+.js-slider-carouselMain--dots li button{display:inline-block;height:12px;width:12px;border-radius:50%;background:#eee;font-size:0;line-height:0;border:0}
+.js-slider-carouselMain--dots li.slick-active button{background:#972839}
 /*******SIDEBAR*******/
 .sidebar_main {background:#972839; padding-top:30px}
 .sidebar_main h2 {font:24px "montserratlight",sans-serif; color:#fff; margin:0 0 35px; padding:0 20px; text-transform:uppercase}

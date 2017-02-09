@@ -20,7 +20,35 @@ $(document).ready(function() {
   responsiveClasses();
   getYear();
 //SLICK SLIDER
-  $(".regular").slick({
-    //parameters
+  $(".js-slider-main").slick({
+    autoplay:true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    dots: true,
+    dotsClass: 'js-slider-main--dots'
+  });
+  $(".js-slider-carouselMain").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplaySpeed: 4000,
+    arrows: false,
+    dots: true,
+    dotsClass: 'js-slider-carouselMain--dots',
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });
 });
