@@ -22,6 +22,12 @@ function loadMenu(){
     $(this).siblings('ul').slideToggle();
   });
 }
+function responsiveAccordion(){
+  $('.mobile-iconAccordion').click(function(){
+    $(this).children('.fa').toggleClass('fa-chevron-right fa-chevron-down');
+    $(this).parent().siblings(".block-homeLinks--content").toggle();
+  });
+}
 $(document).ready(function() {
 //SIDR
   $('#menu-responsive').sidr({
@@ -43,6 +49,7 @@ $(document).ready(function() {
   responsiveClasses();
   getYear();
   loadMenu();
+  responsiveAccordion();
 //SLICK SLIDER
   $(".js-slider-main").slick({
     autoplay:true,
