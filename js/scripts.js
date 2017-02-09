@@ -17,6 +17,10 @@ function getYear(){
 
 $(document).ready(function() {
 //Call functions here
-responsiveClasses();
-getYear();
+  responsiveClasses();
+  getYear();
+//SLICK SLIDER
+  $(".regular").slick({
+    //parameters
+  });
 });
