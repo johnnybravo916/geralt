@@ -28,6 +28,14 @@ function responsiveAccordion(){
     $(this).parent().siblings(".block-homeLinks--content").toggle();
   });
 }
+function sideMenu(){
+  $('.sidebar_main li:has(ul) a').click(function(){
+    $(this).siblings('ul').slideToggle();
+    return false;
+  });
+}
+
+
 $(document).ready(function() {
 //SIDR
   $('#menu-responsive').sidr({
@@ -49,6 +57,7 @@ $(document).ready(function() {
   responsiveClasses();
   getYear();
   loadMenu();
+  sideMenu()
   responsiveAccordion();
 //SLICK SLIDER
   $(".js-slider-main").slick({
@@ -82,11 +91,11 @@ $(document).ready(function() {
       }
     }]
   });
-  
-  
 });
+
 $( window ).resize(function () {
   $.sidr('close', 'sidr');
+  responsiveClasses();
 });
 
 

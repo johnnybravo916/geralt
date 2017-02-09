@@ -7,7 +7,9 @@
 html{background:#fff}
 body{font:300 16px/1.5 'Open Sans', sans-serif;color:#000}
 h1, h2, h3, h4, h5{font-family:montserrat, sans-serif;font-weight:300;}
-h1 {font:28px "montserratlight",sans-serif; color:#333; letter-spacing:1px; margin:30px 0}
+h1 {font:300 28px "montserrat",sans-serif; color:#333; letter-spacing:1px; margin:30px 0}
+.news-single--content h2 {font:300 20px 'Open Sans',sans-serif; color:#333; letter-spacing:1px; margin-bottom:30px}
+h2 {font:300 22px 'montserrat',sans-serif; color:#333; letter-spacing:1px; margin:30p 0}
 
 input{border:none}
 img, video{max-width:100%}
@@ -15,13 +17,18 @@ select{cursor:pointer}
 a:hover, a:focus{text-decoration:none}
 
 /*******USEFUL STUFF*******/
-.font-montserratLight{font-family:montserrat, sans-serif;font-weight:300}
+.font-montserrat{font-family:montserrat, sans-serif;font-weight:300}
 .font-montserrat{font-family:montserrat, sans-serif}
 .font-opensans{font-family:'Open Sans', sans-serif}
 .font-museo{font-family:'museo_sans500', sans-serif}
 
 .update-stamp{font-style:italic;font-size:13px;color:#333333;text-align:right;display:block;font-weight:400;margin-bottom:20px}
 .icon-block{display:inline-block;padding:15px 20px}
+.list-largeSpace{margin:20px 0;padding-left:10px}
+.list-largeSpace li{margin-bottom:15px;list-style-type:none}
+.list-largeSpace li:before{content:"• ";color:#cccccc;margin-right:5px;font-size:20px;vertical-align:middle}
+.list-smallSpace li{margin-bottom:10px;list-style-type:none}
+.list-smallSpace li:before{content:"• ";color:#cccccc;margin-right:5px;font-size:20px;vertical-align:middle}
 .btn_read-more {background:#972839; color:#fff; font:12px montserrat,sans-serif; text-transform:uppercase; padding:5px 10px; margin-bottom:-10px; display:inline-block; position:absolute; bottom:-2px; right:0}
 
 .pl20 {padding-left:20px}
@@ -30,6 +37,13 @@ a:hover, a:focus{text-decoration:none}
 .pl20 {padding-right:20px}
 .pl30 {padding-right:30px}
 .pl40 {padding-right:40px}
+
+.mb10{margin-bottom:10px}
+.mb20{margin-bottom:20px}
+.mb30{margin-bottom:30px}
+.mb40{margin-bottom:40px}
+.mb50{margin-bottom:50px}
+.mb60{margin-bottom:60px}
 /*******HEADER*******/
 .branding-link{display:block;margin:20px}
 .branding-link img{max-width:250px}
@@ -95,6 +109,8 @@ a:hover, a:focus{text-decoration:none}
 .slider-carouselMain--contentSlide:last-child .module-homeNews--block{border:none}
 .module-homeNews--date{font-style:italic;margin-bottom:5px}
 .module-homeNews--title{margin:0 0 25px;color:#972839;font-size:18px}
+.module-homeNews--title a{color:#972839}
+.module-homeNews--title a:hover{color:#6b0f1d}
 
 .module-homeLinks{background:#f5f5f5;padding:35px 0}
 .block-homeLinks--header{background:#972839;height:65px;position:relative}
@@ -104,6 +120,7 @@ a:hover, a:focus{text-decoration:none}
 .block-homeLinks--content ul{margin:0;padding:0}
 .block-homeLinks--content ul li{list-style-type:none;font-size:14px}
 .block-homeLinks--content ul li a{color:#fff;margin-bottom:5px;display:block}
+.block-homeLinks--content ul li a:hover{color:#ccc}
 .mobile-iconAccordion{position:absolute;right:0;top:0;color:#fff;width:50px;height:65px;text-align:center;line-height:65px}
 
 .module-home2ColLinks{margin:30px 0 20px}
@@ -114,15 +131,21 @@ a:hover, a:focus{text-decoration:none}
 .block-home2ColLinks--content{background:#f5f5f5;padding:30px 15px;min-height:300px}
 .block-home2ColLinks--content li{color:#cccccc}
 .block-home2ColLinks--content li a{color:#972839;display:block;margin-bottom:10px}
+.block-home2ColLinks--content li a:hover{color:#6b0f1d}
 /*******BREADCRUMBS*******/
 .breadcrumbs {background:#f3ecec; padding:10px}
 .breadcrumbs nav ul {list-style:none; padding:0}
 .breadcrumbs nav li {display:inline}
 .breadcrumbs nav li a {display:inline-block; font-size:13px; color:#972839}
-.breadcrumbs nav li a:after {content:"\f105"; margin:0 10px;  font:300 9px FontAwesome; color:#333}
+.breadcrumbs nav li a:after {content:"\f105"; margin:0 10px;  font:300 12px FontAwesome; color:#333}
 .breadcrumbs nav li:last-child a:after {content:""; display:none}
-.print {color:#bd959b; font:12px montserratlight,sans-serif; text-transform:uppercase}
+.print {color:#bd959b; font:12px montserrat,sans-serif; text-transform:uppercase}
 
+.table-Custom .table-mainHeader{background:#7d7d7d;padding:15px;color:#fff;text-transform:uppercase;width:100%;display:block}
+.table-Custom{border:none;margin:25px 0;background:#7d7d7d}
+.table-Custom table{border:none;margin-bottom:0}
+.table-Custom .table > tbody > tr > th{background:#545454;text-transform:uppercase;border:1px solid #7d7d7d;padding:15px;color:#fff}
+.table-Custom .table > tbody > tr > td{background:#f5f5f5;padding:15px;color:#333;border-right:1px solid #fff;border-bottom:1px solid #dddddd;}
 /*******SLIDERS*******/
 .slider-main--content{margin:0 auto;overflow:hidden}
 .slider-main--contentSlide{position:relative}
@@ -140,14 +163,17 @@ a:hover, a:focus{text-decoration:none}
 .js-slider-carouselMain--dots li.slick-active button{background:#972839}
 /*******SIDEBAR*******/
 .sidebar_main {background:#972839; padding-top:30px}
-.sidebar_main h2 {font:24px "montserratlight",sans-serif; color:#fff; margin:0 0 35px; padding:0 20px; text-transform:uppercase}
+.sidebar_main h2 {font:24px "montserrat",sans-serif; color:#fff; margin:0 0 35px; padding:0 20px; text-transform:uppercase}
 .sidebar_main ul {list-style:none; padding:0; margin:0}
-.sidebar_main li a {display:block; width:100%; font:14px "montserratlight",sans-serif; color:#fff; padding:20px; border-top:1px solid #fff}
+.sidebar_main li a {display:block; width:100%; font:14px "montserrat",sans-serif; color:#fff; padding:20px; border-top:1px solid #fff}
 .sidebar_main li a:hover,
 .sidebar_main li a.active {background:#6b0f1d}
+.sidebar_main ul ul{background:#f5f5f5;padding:20px;display:none}
+.sidebar_main ul ul a{color:#972839;border:none;padding:0;margin-bottom:10px}
+.sidebar_main ul ul a:hover{background:none;color:#6b0f1d}
 
 .sidebar_search {background:#f5f5f5; padding:15px 20px}
-.sidebar_search h3 {margin:0 0 20px; font:16px "montserratlight", sans-serif}
+.sidebar_search h3 {margin:0 0 20px; font:16px "montserrat", sans-serif}
 .sidebar_search label, .form-label {font-size:14px; font-weight:500; display:block}
 .form-label {margin-top:20px}
 .sidebar_search input,
@@ -183,17 +209,14 @@ a:hover, a:focus{text-decoration:none}
 .news-item p {font-size:14px; line-height:1.65}
 .news-item {border-bottom:1px solid #eee; position:relative; padding-bottom:20px; margin-bottom:10px}
 
-
-/*******LISTING PAGE*******/
-
-
 /*******SINGLE PAGE*******/
-
+.single{font-size:14px;font-weight:400}
 
 /*******FOOTER*******/
 footer ul{margin:0;padding:0}
 footer li{display:inline}
 footer li a{display:inline-block;font-size:13px;color:#972839}
+footer li a:hover{color:#6b0f1d}
 footer li:after{content:"|";color:#ccc;padding:0 3px 0 5px}
 footer li:last-child:after{display:none}
 .footer-top{background:#f9f9f9;padding:20px 0}
