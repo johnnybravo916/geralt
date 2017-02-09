@@ -20,7 +20,7 @@
   <script src="js/jquery.js"></script>
 </head>
 <body>
-<header class="header-desktop">
+<header class="header-desktop hidden-xs">
   <div class="container">
     <div class="header-masthead">
       <div class="row">
@@ -64,7 +64,7 @@
     </div>
     <div class="menu-desktop">
       <nav>
-        <ul>
+        <ul class="js-MenuReference">
           <li><a href="#" title="#">Link</a></li>
           <li>
             <a href="#" title="#">Link</a>
@@ -86,8 +86,34 @@
     </div>
   </div>
 </header>  
+<header class="header-mobile visible-xs">
+  <div class="container">
+    <div class="header-mastheadResponsive">
+      <div class="row">
+        <div class="col-sm-12">
+          <a id="menu-responsive" class="icon--menuResponsive" href="#sidr">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="/" title="AGC | Attorney-General's Chambers" class="branding-link">
+            <img src="./images/branding.png" alt="AGC | Attorney-General's Chambers"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jsClose-sidr"><i class="fa fa-times"></i></div>
+  <div id="sidr">
+    <nav class="menuMobile">
+      <div class="js-MenuClone">
+      <!--Clone Menu-->
+      </div>
+    </nav>
+  </div>
+</header>
 
-<section class="slider-main--wrap">
+<section class="slider-main--wrap responsiveheaderFix">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -170,7 +196,7 @@
 <section class="module-homeLinks">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <div class="block-homeLinks">
           <div class="block-homeLinks--img">
             <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
@@ -190,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <div class="block-homeLinks">
           <div class="block-homeLinks--img">
             <img src="./placeholder/image-publicprosecutor.jpg" title="#"/>
@@ -210,7 +236,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <div class="block-homeLinks">
           <div class="block-homeLinks--img">
             <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
@@ -229,7 +255,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <div class="block-homeLinks">
           <div class="block-homeLinks--img">
             <img src="./placeholder/image-governmentlegal.jpg" title="#"/>
@@ -256,7 +282,7 @@
 <section class="module-home2ColLinks">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="block-home2ColLinks">
           <div class="block-home2ColLinks--header block-homeFaq">
             <span class="icon-block icon-block--faq"><i class="fa fa-question-circle"></i></span>
@@ -272,7 +298,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="block-home2ColLinks">
           <div class="block-home2ColLinks--header block-homeFaq">
             <span class="icon-block icon-block--faq"><i class="fa fa-suitcase"></i></span>
