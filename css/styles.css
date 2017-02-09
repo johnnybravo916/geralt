@@ -6,6 +6,7 @@
 /*******GLOBAL*******/
 html{background:#fff}
 body{font:400 16px/1.5 'Open Sans', sans-serif;font-weight:400;color:#000}
+h1, h2, h3, h4, h5{font-family:montserrat, sans-serif;font-weight:300;}
 
 input{border:none}
 img, video{max-width:100%}
